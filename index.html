@@ -10,6 +10,22 @@
     <title>Amazon.com</title>
 </head>
 <body>
+    <div id="left-appbar" class="appbar">
+        <a href="#" class="close-btn" onclick="toggleAppBar('left-appbar')">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Deals</a>
+        <a href="#">About</a>
+    </div>
+    <div id="right-appbar" class="appbar right">
+        <a href="#" class="close-btn" onclick="toggleAppBar('right-appbar')">&times;</a>
+        <a href="#">Profile</a>
+        <a href="#">Orders</a>
+        <a href="#">Settings</a>
+        <a href="#">Help</a>
+    </div>
+    <button class="open-btn left" onclick="toggleAppBar('left-appbar')">☰ Open Left</button>
+    <button class="open-btn right" onclick="toggleAppBar('right-appbar')">☰ Open Right</button>
     <header>
         <div class="first">
             <div class="flex logo">
@@ -146,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="box"> <!-- 네번째째 상자-->
+                    <div class="box"> <!-- 네번째 상자-->
                         <h3>Shop deals in Fashion</h3>
                         <div class="box-a">
                             <div>
@@ -187,5 +203,6 @@
             </div>
         </div>
     </section>
+<script src="./app.js"></script>
 </body>
 </html>
